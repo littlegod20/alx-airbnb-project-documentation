@@ -372,4 +372,4 @@ Users can search properties by:
 
 ## Diagram
 
-![alt text](<features-diagram.png.png>)
+![alt text](<features-diagram.png>)
