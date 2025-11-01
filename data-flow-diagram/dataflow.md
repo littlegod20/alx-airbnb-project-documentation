@@ -1,4 +1,5 @@
 ## Level 0 Context Diagram
+```
 flowchart TD
     %% External Entities
     Guest[Guest User]
@@ -55,10 +56,11 @@ flowchart TD
     
     NotificationService -->|Email Sending Requests| EmailService
     EmailService -->|Delivery Status| NotificationService
-
+```
 
 
 ## Level 1 DFD - Detailed Processes
+```
 flowchart TD
     %% External Entities
     Guest[Guest User]
@@ -180,9 +182,10 @@ flowchart TD
     P4_1 -->|Payment Status| P3_3
     P3_3 -->|Booking Events| P5_1
     P4_1 -->|Payment Events| P5_1
-
+```
 
 ## Detailed Booking Flow Sequence
+```
 sequenceDiagram
     participant G as Guest
     participant P2 as Property Search
@@ -227,9 +230,10 @@ sequenceDiagram
         P5->>G: Booking rejected notification
         P3-->>G: Booking status: Rejected
     end
+```
 
 ## Payment Processing Flow
-
+```
 flowchart TD
     Start[Booking Created] --> CheckType{Booking Type}
     
@@ -264,8 +268,10 @@ flowchart TD
     end
     
     PostStay --> End[Process Complete]
+```
 
 ## Notification Flow Diagram
+```
 flowchart LR
     subgraph EventSources [Event Sources]
         A[User Registration]
@@ -306,3 +312,5 @@ flowchart LR
     I --> M
     J --> M
     K --> M
+
+```
